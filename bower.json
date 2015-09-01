@@ -1,0 +1,30 @@
+{
+  "name": "angular-j-modal",
+  "version": "0.0.0",
+  "main": [
+    "dist/js/angular-j-modal.js",
+    "dist/js/angular-j-modal.min.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "*.md",
+    "demo",
+    "bower_components",
+    "node_modules",
+    "src",
+    "task",
+    ".bowerrc",
+    ".gitattributes",
+    ".gitignore",
+    ".jshintrc",
+    ".sublime-project",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular": "~1.3.14",
+    "jquery": ">= 1.9.1",
+    "bootstrap": "~3.3.2"
+  },
+  "devDependencies": {}
+}

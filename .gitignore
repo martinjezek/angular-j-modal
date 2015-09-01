@@ -1,0 +1,10 @@
+.DS_Store
+.sublime-project.sublime-workspace
+*~
+*.diff
+*.patch
+*.bck
+*.bak
+*.log
+node_modules
+bower_components

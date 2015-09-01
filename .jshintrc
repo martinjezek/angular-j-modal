@@ -1,0 +1,27 @@
+{
+    "quotmark"      : "single",
+    "indent"        : 4,
+
+    "globalstrict"  : true,
+    "trailing"      : true,
+    "expr"          : true,
+    "newcap"        : true,
+    "camelcase"     : false,
+    "curly"         : false,
+    "unused"        : false,
+
+    "browser"       : true,
+    "devel"         : false,
+    "node"          : true,
+    "jasmine"       : true,
+    "mocha"         : true,
+
+    "globals": {
+        "angular"   : false,
+        "$"         : false,
+
+        "browser"       : false,
+        "element"       : false,
+        "by"            : false
+    }
+}
