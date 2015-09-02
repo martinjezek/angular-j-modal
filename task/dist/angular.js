@@ -15,7 +15,7 @@ module.exports = function(gulp, plug) {
         return gulp.src([
             './dist/js/*.js'
         ])
-        .pipe(plug.concat('loading-layer.min.js'))
+        .pipe(plug.concat(pkg.name + '.min.js'))
         .pipe(plug.header(plug.banner, { pkg : pkg } ))
         .pipe(gulp.dest('./dist/js/'));
     });
@@ -25,9 +25,10 @@ module.exports = function(gulp, plug) {
     // $ gulp angular:dist-clean
     //
     gulp.task('angular:dist-clean', function(done) {
+        var pkg = require('./../../package.json');
         plug.del([
             './dist/js/*',
-            '!./dist/js/loading-layer.min.js'
+            '!./dist/js/' + pkg.name + '.min.js'
         ], done);
     });
 
@@ -60,9 +61,9 @@ module.exports = function(gulp, plug) {
         ])
         .pipe(plug.jade())
         .pipe(plug.ngTemplates({
-            module: 'external.components.loading-layer.views',
+            module: 'external.components.angular-j-modal.views',
             path: function (path, base) {
-                return '/external/components/loading-layer/' + path.replace(base, '');
+                return '/external/components/angular-j-modal/' + path.replace(base, '');
             }
         }))
         .pipe(plug.concat('views.js'))

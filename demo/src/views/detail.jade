@@ -1,0 +1,10 @@
+div.modal-header
+    button.close(type='button', data-dismiss='modal')
+        span(aria-hidden='true') &times;
+        span.sr-only Close
+    h4.modal-title Detail
+div.modal-body
+    p.last #[strong Name:] {{ name }} {{ surname }}
+div.modal-footer
+    button.btn.btn-default(type='button', data-dismiss='modal') Cancel
+    button.btn.btn-primary(type='button', ng-click='vm.confirm()') Confirm

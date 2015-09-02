@@ -1,0 +1,16 @@
+table.table.table-hover
+    thead
+        tr
+            th #
+            th First Name
+            th Last Name
+            th Username
+            th Action
+    tbody
+        tr(ng-repeat='item in myDirective.items')
+            th {{ $index + 1 }}
+            td {{ item.name }}
+            td {{ item.surname }}
+            td {{ '@' + item.username }}
+            td
+                button.btn.btn-xs.btn-default(ng-click='myDirective.detail(item)') Detail
