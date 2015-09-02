@@ -7,7 +7,7 @@ module.exports = function(gulp, plug) {
     // $ gulp release --version [major|minor|patch|prerelease]
     //
     gulp.task('release', function(done) {
-       plug.runSequence('test', 'bump', 'changelog', 'commit-release', done);
+       plug.runSequence('test', 'bump', 'dist', 'changelog', 'commit-release', done);
     });
 
     // Bump /release/
