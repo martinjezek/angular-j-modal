@@ -44,6 +44,8 @@
                     templateUrl  : '/detail.html',
                     controller   : 'Detail',
                     controllerAs : 'vm',
+                    size         : 'md',
+                    className    : 'my-class-name',
                     onClose      : onClose,
                     onConfirm    : onConfirm
                 });
