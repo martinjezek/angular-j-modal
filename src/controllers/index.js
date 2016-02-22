@@ -77,7 +77,7 @@
         }
 
         function createModalInstance(template) {
-            var modalInstance = angular.element('<div class="modal fade" ng-class="$modalOptions.className"><div class="modal-dialog modal-{{ $modalOptions.size }}"><div class="modal-content"></div></div></div>'),
+            var modalInstance = angular.element('<div class="modal fade" ng-class="$modalOptions.className" tabindex="-1"><div class="modal-dialog modal-{{ $modalOptions.size }}"><div class="modal-content"></div></div></div>'),
                 modalContent  = modalInstance.find('.modal-content');
 
             modalContent.html(template);
