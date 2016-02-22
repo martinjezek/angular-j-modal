@@ -1,3 +1,11 @@
+### 0.0.3 (2016-02-22)
+
+
+#### Features
+
+* add keyboard shortcut for dissmising modal ([2b6ea92c]([object Object]/commit/2b6ea92ce5c01e1e86c1294bfcc42dc3256d58cf))
+
+
 ### 0.0.2 (2016-01-05)
 
 

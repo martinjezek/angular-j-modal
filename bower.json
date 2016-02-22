@@ -1,6 +1,6 @@
 {
   "name": "angular-j-modal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": [
     "dist/js/angular-j-modal.js",
     "dist/js/angular-j-modal.min.js"
